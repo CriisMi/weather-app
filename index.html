@@ -9,8 +9,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <input type="text" name="city" id="city">
-    <input type="submit" value="Search" class="search-button">
+    <div class="search-form">
+        <input type="text" placeholder="Search city" name="city" id="city" class="search-field">
+        <input type="submit" value="Search" class="search-button">
+        <div>
+            <input type="radio" id="celsius" name="temperature" value="celsius">
+            <label for="celsius">Celsius</label>
+        </div>
+        <div>
+            <input type="radio" id="fahrenheit" name="temperature" value="fahrenheit">
+            <label for="fahrenheit">Fahrenheit</label>
+        </div>
+    </div>
     <div class="results"></div>
 </body>
 </html>

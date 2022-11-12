@@ -13,8 +13,12 @@ async function getWeatherData(cityName) {
 let displayResults = document.querySelector('.results');
 
 function displayDataElement(name, data) {
+    let element = document.createElement('div');
+    element.textContent = `${name}:`;
+    element.setAttribute('class', 'data-name');
+    displayResults.appendChild(element);
     let dataElement = document.createElement('div');
-    dataElement.textContent = `${name}: ${data}`;
+    dataElement.textContent = data;
     displayResults.appendChild(dataElement);
 }
 
@@ -34,6 +38,5 @@ let searchButton = document.querySelector('.search-button');
 let cityField = document.querySelector('#city');
 searchButton.addEventListener('click', () => {
     let city = cityField.value;
-    let weatherData = getWeatherData(city);
+      let weatherData = getWeatherData(city);
 });
-
