@@ -71,6 +71,11 @@ const img = document.querySelector('img');
 
 function weatherDescription(temp) {
     let weather = '';
+    let tempUnit = getUnit();
+    if (tempUnit !== 'metric') {
+        temp = (temp - 32) / 1.8;
+        console.log(temp);
+    }
     if (temp < 5) {
         weather =  'snow';
     } else if (temp < 15) {
