@@ -74,7 +74,6 @@ function weatherDescription(temp) {
     let tempUnit = getUnit();
     if (tempUnit !== 'metric') {
         temp = (temp - 32) / 1.8;
-        console.log(temp);
     }
     if (temp < 5) {
         weather =  'snow';
