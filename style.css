@@ -51,3 +51,16 @@ font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 18px;
     justify-self: flex-start;
 }
+
+.temperature {
+    margin-top: 15px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-around;
+}
+
+img {
+    margin-top: 20px;
+    width: 300px;
+    height: auto;
+}
